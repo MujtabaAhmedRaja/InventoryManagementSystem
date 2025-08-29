@@ -138,14 +138,7 @@ class Functions {
         }
     }
 
-//    public Product[] getAllProducts() {
-//        ArrayList<Product> p=new ArrayList<>();
-//        for(Product product : inventory.values()){
-//            p.add(product);
-//        }
-//        Object[] parry=p.toArray();
-//        return (Product[]) parry;
-//    }
-}
+
+
 
 
