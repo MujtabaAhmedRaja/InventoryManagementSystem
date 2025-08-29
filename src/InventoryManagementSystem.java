@@ -1,111 +1,4 @@
-//import java.util.*;
-//public class InventoryManagementSystem {
-//    public static void main(String[] args) {
-//        Functions functions = new Functions();
-//        Scanner scanner = new Scanner(System.in);
-//
-//        while (true) {
-//            System.out.println("\n--- Inventory Management System ---");
-//            System.out.println("1. Press 1 to Add Product");
-//            System.out.println("2. Press 2 to Search Product");
-//            System.out.println("3. Press 3 to Display All Products");
-//            System.out.println("4. Press 4 to Update Product Quantity");
-//            System.out.println("5. Press 5 to Delete Product");
-//            System.out.println("6. Press 6 to Place Order");
-//            System.out.println("7. Press 7 to Process Order");
-//            System.out.println("8. Press 8 to Cancel Order");
-//            System.out.println("9. Press 9 to Display All Orders");
-//            System.out.println("10.Press 10 to Exit");
-//            System.out.print("Enter your choice: ");
-//
-//            int choice = scanner.nextInt();
-//            scanner.nextLine();
-//
-//            switch (choice) {
-//                case 1:
-//                    System.out.print("Enter Product ID: ");
-//                    int productId = scanner.nextInt();
-//                    scanner.nextLine();
-//                    System.out.print("Enter Product Name: ");
-//                    String productName = scanner.nextLine();
-//                    System.out.print("Enter Quantity: ");
-//                    int productQuantity = scanner.nextInt();
-//                    System.out.print("Enter Price: ");
-//                    double productPrice = scanner.nextDouble();
-//                    scanner.nextLine();
-//                    System.out.print("Enter Supplier ID: ");
-//                    int supplierId = scanner.nextInt();
-//                    scanner.nextLine();
-//                    System.out.print("Enter Supplier Name: ");
-//                    String supplierName = scanner.nextLine();
-//                    System.out.print("Enter Supplier Contact: ");
-//                    String supplierContact = scanner.nextLine();
-//                    Supplier supplier = new Supplier(supplierId, supplierName, supplierContact);
-//                    functions.addProduct(productId, productName, productQuantity, productPrice, supplier);
-//                    break;
-//
-//                case 2:
-//                    System.out.print("Enter Product ID or Name: ");
-//                    String query = scanner.nextLine();
-//                    Product product = functions.searchProduct(query);
-//                    if (product != null) {
-//                        System.out.println("Product Found: ID: " + product.id + ", Name: " + product.name + ", Quantity: " + product.quantity + ", Price: " + product.price + ", Supplier: " + product.supplier.name);
-//                    } else {
-//                        System.out.println("Product not found.");
-//                    }
-//                    break;
-//
-//                case 3:
-//                    functions.displayProducts();
-//                    break;
-//
-//                case 4:
-//                    System.out.print("Enter Product ID: ");
-//                    int updateId = scanner.nextInt();
-//                    System.out.print("Enter New Quantity: ");
-//                    int newQuantity = scanner.nextInt();
-//                    functions.updateProductQuantity(updateId, newQuantity);
-//                    break;
-//
-//                case 5:
-//                    System.out.print("Enter Product ID: ");
-//                    int deleteId = scanner.nextInt();
-//                    functions.deleteProduct(deleteId);
-//                    break;
-//
-//                case 6:
-//                    System.out.print("Enter Product ID: ");
-//                    int orderProductId = scanner.nextInt();
-//                    System.out.print("Enter Quantity: ");
-//                    int orderQuantity = scanner.nextInt();
-//                    functions.addOrder(orderProductId, orderQuantity);
-//                    break;
-//
-//                case 7:
-//                    functions.processOrder();
-//                    break;
-//
-//                case 8:
-//                    System.out.print("Enter Order ID: ");
-//                    int cancelOrderId = scanner.nextInt();
-//                    functions.cancelOrder(cancelOrderId);
-//                    break;
-//                case 9:
-//                    functions.displayorders();
-//                    break;
-//                case 10:
-//                    System.out.println("Exiting the system. Goodbye!");
-//                    scanner.close();
-//                    return;
-//
-//
-//                default:
-//                    System.out.println("Invalid choice. Please try again.");
-//                    break;
-//            }
-//        }
-//    }
-//}
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -337,6 +230,7 @@ public class InventoryManagementSystem extends JFrame {
         });
     }
 }
+
 
 
 
